@@ -3,7 +3,6 @@ import Identifier from '../Identifier/Identifier';
 import Menu from '../Menu/Menu';
 import { mount } from 'enzyme';
 import Popover from '../Popover/Popover';
-import ProductTile from './ProductTile';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Tile from './Tile';
@@ -90,26 +89,6 @@ describe('<Tile />', () => {
         </Tile>
     );
 
-    const productMediaTile = (
-        <ProductTile className='pink' isButton>
-            <ProductTile.Media image='https://techne.yaas.io/images/product-thumbnail-wide.png' />
-            <ProductTile.Content title='Tile Title'>
-                <p>Tile Description</p>
-            </ProductTile.Content>
-        </ProductTile>
-    );
-
-    const disabledProductMediaTile = (
-        <ProductTile disabled>
-            <ProductTile.Media
-                className='blue'
-                image='https://techne.yaas.io/images/product-thumbnail-wide.png' />
-            <ProductTile.Content className='blue' title='Tile Title'>
-                <p>Tile Description</p>
-            </ProductTile.Content>
-        </ProductTile>
-    );
-
     test('create tile component', () => {
         // simple tile
         let component = renderer.create(simpleTile);
@@ -138,16 +117,6 @@ describe('<Tile />', () => {
 
         // action tile no class
         component = renderer.create(actionTileNoClass);
-        tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-
-        // product media tile
-        component = renderer.create(productMediaTile);
-        tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-
-        // disabled product media tile
-        component = renderer.create(disabledProductMediaTile);
         tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
@@ -179,46 +148,6 @@ describe('<Tile />', () => {
 
         test('should allow props to be spread to the TileMedia component', () => {
             const element = mount(<Tile.Media data-sample='Sample' />);
-
-            expect(
-                element.getDOMNode().attributes['data-sample'].value
-            ).toBe('Sample');
-        });
-
-        test('should allow props to be spread to the TileActions component', () => {
-            const element = mount(<Tile.Actions data-sample='Sample' />);
-
-            expect(
-                element.getDOMNode().attributes['data-sample'].value
-            ).toBe('Sample');
-        });
-
-        test('should allow props to be spread to the ProductTile component', () => {
-            const element = mount(<ProductTile data-sample='Sample' />);
-
-            expect(
-                element.getDOMNode().attributes['data-sample'].value
-            ).toBe('Sample');
-        });
-
-        test('should allow props to be spread to the ProductTileContent component', () => {
-            const element = mount(<ProductTile.Content data-sample='Sample' />);
-
-            expect(
-                element.getDOMNode().attributes['data-sample'].value
-            ).toBe('Sample');
-        });
-
-        test('should allow props to be spread to the ProductTileContent component\'s h2 element', () => {
-            const element = mount(<ProductTile.Content titleProps={{ 'data-sample': 'Sample' }} />);
-
-            expect(
-                element.find('h2').getDOMNode().attributes['data-sample'].value
-            ).toBe('Sample');
-        });
-
-        test('should allow props to be spread to the ProductTileMedia component', () => {
-            const element = mount(<ProductTile.Media data-sample='Sample' image='https://techne.yaas.io/images/product-thumbnail-wide.png' />);
 
             expect(
                 element.getDOMNode().attributes['data-sample'].value
