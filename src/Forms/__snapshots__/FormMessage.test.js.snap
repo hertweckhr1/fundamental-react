@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Forms /> create form message item 1`] = `
+<span
+  className="fd-form__message fd-form__message--help"
+>
+  Pellentesque metus lacus commodo eget justo ut rutrum varius nunc
+</span>
+`;
