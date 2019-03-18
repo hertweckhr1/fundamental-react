@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Button } from '../';
-import ListGroup from './ListGroup';
 import ListGroupItem from './_ListGroupItem';
 import { mount } from 'enzyme';
 import React from 'react';
