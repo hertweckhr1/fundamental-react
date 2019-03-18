@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-describe('<ListGroupItem />', () => {
+describe('<ListGroupItemActions />', () => {
     const defaultListGroupItem = (
         <ListGroupItem className='blue'>
             <a style={{ cursor: 'pointer' }}>List item 1</a>

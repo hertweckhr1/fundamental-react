@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ListGroupItem /> create list group 1`] = `
+exports[`<ListGroupItemActions /> create list group 1`] = `
 <li
   className="fd-list-group__item blue"
 >
