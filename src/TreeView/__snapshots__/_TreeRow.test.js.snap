@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TreeRow /> create tree row component 1`] = `
+<div
+  className="fd-tree__row"
+>
+  <div
+    className="fd-tree__col fd-tree__col--control"
+  >
+    First Level
+  </div>
+  <div
+    className="fd-tree__col"
+  >
+    Data Col 2
+  </div>
+  <div
+    className="fd-tree__col"
+  >
+    Data Col 3
+  </div>
+  <div
+    className="fd-tree__col"
+  >
+    Data Col 4
+  </div>
+</div>
+`;
