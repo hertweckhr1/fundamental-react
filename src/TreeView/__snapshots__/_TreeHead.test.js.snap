@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TreeHead /> create tree head component 1`] = `
+<div
+  className="fd-tree fd-tree--header"
+>
+  <div
+    className="fd-tree__row fd-tree__row--header"
+  >
+    <div
+      className="fd-tree__col fd-tree__col--control"
+    >
+      <div>
+        <button
+          aria-label="expand all"
+          className="fd-tree__control"
+        />
+        Column Header 1
+      </div>
+    </div>
+    <div
+      className="fd-tree__col"
+    >
+      Column Header 2
+    </div>
+    <div
+      className="fd-tree__col"
+    >
+      Column Header 3
+    </div>
+    <div
+      className="fd-tree__col"
+    >
+      Column Header 4
+    </div>
+  </div>
+</div>
+`;
