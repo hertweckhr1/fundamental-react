@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TreeCol /> create tree col component 1`] = `
+<div
+  className="fd-tree__col"
+>
+  Grandchild 1
+</div>
+`;
