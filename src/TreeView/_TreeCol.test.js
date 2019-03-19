@@ -15,7 +15,6 @@ jest.mock('shortid', () => {
 describe('<TreeCol />', () => {
     const treeCol = (
         <TreeCol>Grandchild 1</TreeCol>
-                                        
     );
 
     test('create tree col component', () => {
