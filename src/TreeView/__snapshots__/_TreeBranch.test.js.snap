@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TreeBranch /> create treebranch component 1`] = `
+<ul
+  aria-hidden={false}
+  className=""
+  role="group"
+>
+  <li
+    aria-expanded={false}
+    className="fd-tree__item"
+    id="fd-1"
+    role="treeitem"
+  >
+    <div
+      className="fd-tree__row"
+    >
+      <div
+        className="fd-tree__col fd-tree__col--control"
+      >
+        GreatGrandchild 1
+      </div>
+    </div>
+  </li>
+</ul>
+`;
