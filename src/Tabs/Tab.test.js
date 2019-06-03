@@ -48,7 +48,7 @@ describe('<Tabs />', () => {
         expect(wrapper.prop('onClick')).toBeCalledTimes(1);
     });
 
-    describe('Prop spreadig', () => {
+    describe('Prop spreadg', () => {
         test('should allow props to be spread to the Tab component', () => {
             const element = mount(<Tab data-sample='Sample' id='testId' />);
 
