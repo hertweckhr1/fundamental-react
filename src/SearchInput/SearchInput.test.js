@@ -195,7 +195,7 @@ describe('<SearchInput />', () => {
         expect(wrapper.state('isExpanded')).toBeFalsy();
     });
 
-    test('check for enter key press on search input without autocomplete', () => {
+    test('check for enter key pres on search input without autocomplete', () => {
         const wrapper = shallow(noListSearchInput);
 
         // click in search box
