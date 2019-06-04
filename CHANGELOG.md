@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.0"></a>
+# [0.6.0-rc.0](https://github.com/SAP/fundamental-react/compare/v0.5.4-rc.0...v0.6.0-rc.0) (2019-06-04)
+
+
+### Bug Fixes
+
+* Merge pull request [#3](https://github.com/SAP/fundamental-react/issues/3) from hertweckhr1/test2 ([b9775dd](https://github.com/SAP/fundamental-react/commit/b9775dd))
+
+
+### Features
+
+* Merge pull request [#5](https://github.com/SAP/fundamental-react/issues/5) from hertweckhr1/test4 ([020f2ba](https://github.com/SAP/fundamental-react/commit/020f2ba))
+
+
+
 <a name="0.5.4-rc.0"></a>
 ## [0.5.4-rc.0](https://github.com/SAP/fundamental-react/compare/v0.5.3...v0.5.4-rc.0) (2019-06-03)
 

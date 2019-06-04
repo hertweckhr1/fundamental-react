@@ -19,7 +19,7 @@ describe('<FormInput />', () => {
         expect(tree).toMatchSnapshot();
     });
 
-    describe('Prop spreading', () => {
+    describe('Prop spread', () => {
         test('should allow props to be spread to the FormInput component', () => {
             const element = mount(<FormInput data-sample='Sample' />);
 
