@@ -300,7 +300,7 @@ describe('<Calendar />', () => {
     });
 
     // broken test for 31st of month -> needs to be tested once calendar is refactored.
-    xtest('click next button on the 31st of month', () => {
+    xtest('click next buton on the 31st of month', () => {
         let wrapper = mount(defaultCalendar);
 
         let initialDate = new Date('5/31/2019');
