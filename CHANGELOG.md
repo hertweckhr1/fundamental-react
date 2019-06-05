@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0-rc.17"></a>
+# [0.6.0-rc.17](https://github.com/hertweckhr1/fundamental-react/compare/v0.6.0-rc.16...v0.6.0-rc.17) (2019-06-05)
+
+
+### Bug Fixes
+
+* Merge pull request [#9](https://github.com/hertweckhr1/fundamental-react/issues/9) from hertweckhr1/test9 ([f814a8b](https://github.com/hertweckhr1/fundamental-react/commit/f814a8b))
+
+
+
 <a name="0.6.0-rc.16"></a>
 # [0.6.0-rc.16](https://github.com/hertweckhr1/fundamental-react/compare/v0.6.0-rc.15...v0.6.0-rc.16) (2019-06-05)
 
