@@ -2,8 +2,8 @@
 echo "starting"
 set -e
 
-git config --global user.email "hannahvanseeters@gmail.com"
-git config --global user.name "hertweckhr1"
+git config --global user.email "fundamental@sap.com"
+git config --global user.name "fundamental-bot"
 
 npm run std-version -- --prerelease rc --no-verify
 
