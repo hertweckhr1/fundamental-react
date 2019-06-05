@@ -9,12 +9,6 @@ npm run std-version -- --prerelease rc --no-verify
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BRANCH" > /dev/null 2>&1;
 
-cp -rf package.json lib
-cp -rf README.md lib
-cp -rf NOTICE.txt lib
-cp -rf LICENSE.txt lib
-cp -rf CHANGELOG.md lib
-
 cd lib 
 
 npm publish --tag prerelease
