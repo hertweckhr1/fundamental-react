@@ -20,7 +20,7 @@ describe('<FormInput />', () => {
     });
 
     describe('Prop spread', () => {
-        test('should allow props to be spread to the FormInput component', () => {
+        test('should allow prop to be spread to the FormInput component', () => {
             const element = mount(<FormInput data-sample='Sample' />);
 
             expect(
