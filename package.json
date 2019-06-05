@@ -8,7 +8,7 @@
   "homepage": "https://sap.github.io/fundamental-react",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SAP/fundamental-react"
+    "url": "https://github.com/hertweckhr1/fundamental-react"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
