@@ -70,7 +70,7 @@ describe('<Alert />', () => {
             ).toBe('Sample');
         });
 
-        test('should allow props to be spread to the Alert component\'s a element when link provided', () => {
+        test('should allow prop to be spread to the Alert component\'s a element when link provided', () => {
             const element = mount(<Alert link='javascript:void(0)' linkProps={{ 'data-sample': 'Sample' }} />);
 
             expect(
