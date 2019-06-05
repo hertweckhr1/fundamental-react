@@ -71,7 +71,7 @@ describe('<Button />', () => {
     });
 
     describe('Prop spreading', () => {
-        test('should allow props to be spread to the Button component', () => {
+        test('should allow prop to be spread to the Button component', () => {
             const element = mount(<Button data-sample='Sample' />);
 
             expect(
