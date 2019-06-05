@@ -65,7 +65,7 @@ describe('<Tabs />', () => {
             ).toBe('Sample');
         });
 
-        test('should allow props to be spread to the Tab component\'s a elements', () => {
+        test('should allow prop to be spread to the Tab component\'s a elements', () => {
             const element = mount(<Tab id='1' linkProps={{ 'data-sample': 'Sample' }} />);
 
             expect(
