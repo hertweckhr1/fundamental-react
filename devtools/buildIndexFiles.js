@@ -35,7 +35,7 @@ componentDirs.map((directory) => {
 
         Object.keys(components).map((component) => {
             if (component === 'default') {
-                fileContents += `export ${components.default.name} from './${fileName}';\n`;
+                fileContents += `export { default as ${components.default.name} } from './${fileName}';\n`;
             } else {
                 fileContents += `export { ${component} } from './${fileName}';\n`;
             }
