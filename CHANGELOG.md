@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.1-rc.5"></a>
+## [0.6.1-rc.5](https://github.com/hertweckhr1/fundamental-react/compare/v0.6.1-rc.4...v0.6.1-rc.5) (2019-06-10)
+
+
+
 <a name="0.6.1-rc.4"></a>
 ## [0.6.1-rc.4](https://github.com/hertweckhr1/fundamental-react/compare/v0.6.1-rc.3...v0.6.1-rc.4) (2019-06-10)
 
