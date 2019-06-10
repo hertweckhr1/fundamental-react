@@ -15,7 +15,9 @@ echo "$std_ver"
 
 git push --follow-tags "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG" master > /dev/null 2>&1;
 
-cd lib 
+npm run build:copy-files
+
+cd lib
 
 npm publish
 
