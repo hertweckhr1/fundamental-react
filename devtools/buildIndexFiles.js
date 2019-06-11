@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const { lstatSync, readdirSync, writeFileSync } = require('fs');
 const path = require('path');
 
@@ -21,6 +22,7 @@ const isComponentExported = (source) => {
 const componentDirs = readdirSync(srcPath).map(name => path.join(srcPath, name)).filter(isComponentDirectory).map(directory => {
     return {
         path: directory,
+        files: readdirSync(directory).filter(isComponentFile),
         fileNames: readdirSync(directory).filter(isComponentFile).filter(isComponentExported)
     };
 });
@@ -32,10 +34,13 @@ componentDirs.map((directory) => {
     directory.fileNames.map((fileName) => {
         // Grab the file's exports.
         let components = require(path.join(directory.path, fileName));
-
+        
         Object.keys(components).map((component) => {
+            let paths = directory.path.split('/')
+            let last = paths[paths.length-1]
+
             if (component === 'default') {
-                fileContents += `export { default as ${components.default.name} } from './${fileName}';\n`;
+                fileContents += `export { default as ${components.default.name} } from '../lib/${last}/${fileName}';\n`;
             } else {
                 fileContents += `export { ${component} } from './${fileName}';\n`;
             }
